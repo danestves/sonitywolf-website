@@ -65,8 +65,8 @@
 				loader.load( 'models/sonity.obj', function ( obj ) {
 
 					object = obj;
-					object.scale.multiplyScalar( 0.8 );
-					object.position.y = - 30;
+					object.scale.multiplyScalar( 300 );
+					object.position.y = - 15;
 					scene.add( object );
 
 				} );
@@ -97,13 +97,6 @@
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				document.body.appendChild( renderer.domElement );
-
-				//stats
-
-				stats = new Stats();
-				document.body.appendChild( stats.dom );
-
-				window.addEventListener( 'resize', onWindowResize, false );
 
 			}
 
