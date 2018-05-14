@@ -616,13 +616,11 @@ body{
 .intro--banner button .btn-background{
     position:absolute;
     top:0;
-    left:23px;
+    left:0;
     right:0;
     height:100%;
     background-color:#0f33ff;
     z-index:-1;
-    -webkit-transition:left .2s ease-in-out;
-    transition:left .2s ease-in-out
 }
 .intro--banner button:hover .btn-background{
     left:0
@@ -967,7 +965,7 @@ body{
 .about--banner h2{
     position:relative;
     margin-top:35px;
-    font-size:68px;
+    font-size:60px;
     font-weight:900;
     line-height:1;
     z-index:1
