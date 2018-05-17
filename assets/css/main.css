@@ -605,7 +605,7 @@ body{
     line-height:1;
     z-index:1
 }
-.intro--banner button{
+.intro--banner button, .github{
     position:relative;
     padding:5px 17px 5px 12px;
     font-weight:700;
@@ -613,7 +613,7 @@ body{
     background-color:transparent;
     border:none
 }
-.intro--banner button .btn-background{
+.intro--banner button .btn-background, .github .btn-background{
     position:absolute;
     top:0;
     left:0;
@@ -628,7 +628,7 @@ body{
 .intro--banner button:focus{
     outline:none
 }
-.intro--banner button svg{
+.intro--banner button svg, .github svg{
     position:relative;
     left:5px;
     width:15px;
@@ -1569,4 +1569,7 @@ body{
 .outer-nav li.is-vis:nth-child(5){
     -webkit-transition-delay:.16s;
     transition-delay:.16s
+}
+.github {
+    padding:.6em !important;
 }
