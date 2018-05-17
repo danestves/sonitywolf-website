@@ -1573,3 +1573,13 @@ body{
 .github {
     padding:.6em !important;
 }
+#embedded{
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+#banner{
+    position:absolute;
+    left:2em;
+    z-index:2;
+}
