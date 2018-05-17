@@ -759,7 +759,7 @@ body{
     }
 }
 .work h2{
-    margin:0 0 20px 0;
+    margin:0 0 -10px 0;
     font-size:30px;
     text-align:center
 }
@@ -792,9 +792,12 @@ body{
     font-weight:700;
     text-transform:uppercase
 }
+.work--lockup .slider--item-title strong {
+    text-decoration:underline;
+}
 .work--lockup .slider--item-description{
     display:none;
-    max-width:250px;
+    max-width:550px;
     margin:0 auto
 }
 .work--lockup .slider--item-image{
