@@ -1081,7 +1081,13 @@
             s = $(".side-nav").children().length - 4,
             r = s;
         e(s), i(n, r, s)
-    });
+    }), $(".cta-2").click(function() {
+        var t = $(".side-nav").find(".is-active"),
+            n = $(".side-nav").children().index(t),
+            s = $(".side-nav").children().length - 1,
+            r = s;
+        e(s), i(n, r, s)
+    });;
     var l = document.getElementById("viewport"),
         c = new Hammer(l);
     c.get("swipe").set({
