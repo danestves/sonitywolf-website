@@ -414,7 +414,11 @@
           document.getElementById("formjoin").reset();
           alert("Your submission for join us has been processed");
          });    
-    });  
+    });
+  $('#formjoin').on('submit', function(e) {
+    $('#formjoin *').fadeOut(2000);
+    $('#formjoin').prepend('Your submission has been processed...');
+  });
 </script>
 </body>
 </html>
