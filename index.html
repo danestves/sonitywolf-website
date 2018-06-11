@@ -279,7 +279,7 @@
             <div class="hire">
               <h2>Want to join us?</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form id="formform" class="work-request" action="https://docs.google.com/forms/d/e/1FAIpQLSfya2yaf2yqFfk_4UZFPBZdNTSYl30EkX2ebQL-Yzeoi9U-vQ/formResponse?usp=pp_url" target="hidden_iframe" onSubmit="submitForm();">
+              <form class="work-request" action="https://docs.google.com/forms/d/e/1FAIpQLSfya2yaf2yqFfk_4UZFPBZdNTSYl30EkX2ebQL-Yzeoi9U-vQ/formResponse?usp=pp_url" target="hidden_iframe">
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="entry.1688125558" name="entry.1688125558" type="checkbox" value="app programming">
@@ -386,7 +386,7 @@
                     <label for="email">Email</label>
                   </div>
                 </div>
-                <input type="submit" value="Send Request">
+                <input type="submit" value="Send Request" id="submitbutton">
               </form>
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
             </div>
@@ -409,13 +409,11 @@
 <script src="assets/js/functions-min.js"></script>
 <script>
   console.log("This company is part of Andtek Empire www.andtek.pro/empire");
-  function submitForm() {
-   // Get the first form with the name
-   var frm = document.getElementsById('formform')[0];
-   frm.submit(); // Submit
-   frm.reset();  // Reset
-   return false; // Prevent page refresh
-}
+  $(document).ready(function(){   
+        $(".submitbutton").click(function(){    
+          $("form").trigger("reset");      
+         });    
+    });  
 </script>
 </body>
 </html>
