@@ -409,9 +409,13 @@
 <script src="assets/js/functions-min.js"></script>
 <script>
   console.log("This company is part of Andtek Empire www.andtek.pro/empire");
-  function clearField() {
-    document.formform.reset();
-  }
+  function submitForm() {
+   // Get the first form with the name
+   var frm = document.getElementsById('formform')[0];
+   frm.submit(); // Submit
+   frm.reset();  // Reset
+   return false; // Prevent page refresh
+}
 </script>
 </body>
 </html>
