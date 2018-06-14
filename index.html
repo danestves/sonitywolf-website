@@ -410,9 +410,9 @@
 <script>
   console.log("This company is part of Andtek Empire www.andtek.pro/empire");
   $('#formjoin').on('submit', function(e) {
+    $('#formjoin').reset();
     $('#formjoin *').fadeOut(2000);
     $('#formjoin').prepend('Your submission has been processed...');
-    $('#formjoin').reset();
   });
 </script>
 </body>
