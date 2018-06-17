@@ -279,7 +279,7 @@
             <div class="hire">
               <h2>Want to join us?</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form id="formjoin" class="work-request" action="https://docs.google.com/forms/d/e/1FAIpQLSfya2yaf2yqFfk_4UZFPBZdNTSYl30EkX2ebQL-Yzeoi9U-vQ/formResponse?" target="hidden_iframe">
+              <form id="formjoin" class="work-request" action="https://docs.google.com/forms/d/e/1FAIpQLSfya2yaf2yqFfk_4UZFPBZdNTSYl30EkX2ebQL-Yzeoi9U-vQ/formResponse?" target="hidden_iframe" onsubmit="this.submit(); this.reset(); return false;">
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="entry.1688125558" name="entry.1688125558" type="checkbox" value="true">
@@ -410,7 +410,6 @@
 <script>
   console.log("This company is part of Andtek Empire www.andtek.pro/empire");
   $('#formjoin').on('submit', function(e) {
-    $('#formjoin').reset();
     $('#formjoin *').fadeOut(2000);
     $('#formjoin').prepend('Your submission has been processed...');
   });
