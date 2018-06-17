@@ -382,7 +382,7 @@
                     <label for="name">Name</label>
                   </div>
                   <div class="information-email">
-                    <input id="entry.832389043" name="entry.832389043" type="email" spellcheck="false" required
+                    <input id="entry.832389043" name="entry.832389043" type="email" spellcheck="false" required>
                     <label for="email">Email</label>
                   </div>
                 </div>
@@ -410,9 +410,9 @@
 <script>
   console.log("This company is part of Andtek Empire www.andtek.pro/empire");
   $('#formjoin').on('submit', function(e) {
+    $('#formjoin').reset();
     $('#formjoin *').fadeOut(2000);
     $('#formjoin').prepend('Your submission has been processed...');
-    $('#formjoin').reset();
   });
 </script>
 </body>
